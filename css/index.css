@@ -1,0 +1,1220 @@
+/* RESERT */
+
+* {
+    box-sizing: border-box;
+    }
+    
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, embed,
+    figure, figcaption, footer, header, hgroup,
+    menu, nav, output, ruby, section, summary,
+    time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    }
+    /* HTML5 display-role reset for older browsers */
+    article, aside, details, figcaption, figure,
+    footer, header, hgroup, menu, nav, section {
+    display: block;
+    }
+    
+    body {
+    line-height: 1;    
+    line-height: 1.5;
+    }
+    
+    ol, ul {
+    list-style: none;
+    }
+    
+    blockquote, q {
+    quotes: none;
+    }
+    
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+    content: '';
+    content: none;
+    }
+    
+    table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    }
+    
+    a {
+    color:inherit;
+    text-decoration: none;
+    }
+    
+    img {
+    width: 100%;
+    display: inline-block;
+}
+
+/* STYLES */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@800&display=swap');
+
+:root{
+    --main-color: #F23005;
+    --two-color: #BF2B0A;
+    --three-color:#731F17;
+    --four-color: #09260B;
+    --five-color: #0D0D0C;
+}
+
+h1{
+    color: var(--main-color);
+
+    font-size: 8rem;
+    font-family: 'Kanit', sans-serif;
+
+    font-style: normal;
+    line-height: normal;
+
+}
+
+h2{
+    color: var(--main-color);
+    
+    font-family: 'Kanit', sans-serif;
+
+    font-size: 2.5rem;
+    font-style: normal;
+    line-height: normal;
+
+}
+
+h2:hover{
+    
+}
+
+h3{
+    color: var(--main-color);
+    
+    font-family: 'Kanit', sans-serif;
+
+    font-size: 2.5rem;
+    font-style: normal;
+    line-height: normal;
+}
+
+p{
+    color: var(--main-color);
+    
+    font-family: 'Kanit', sans-serif;
+
+    font-size: 2.5rem;
+    font-style: normal;
+    line-height: normal;
+}
+
+
+/* BODY */
+
+body{
+    background-color: var(--five-color);
+    width: 100%;
+    height: 100vh;
+    
+}
+
+main{
+    
+}
+
+/* SECTION-INDEX-01 */
+
+.section-index-01{
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-flow: column;
+    margin: auto;
+
+    justify-content: center;
+    align-items: center;
+    
+}
+.section-index-01-1{
+    display: flex;
+    flex-flow: column;
+    
+}
+
+.section-index-01__block{
+    max-width: 70%;
+    margin: auto;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+.section-index-01__Home{
+    min-width: 30%;
+}
+
+.section-index-01__Home__Text{
+    display: flex;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.section-index-01__Home__Text p{
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+
+
+/* BLOQUE NOTICIAS, TENDENCIAS, MULTIMEDIA Y COMUNIDAD 1.1
+
+    BLOQUE_01_NOTICIAS
+
+.section-index-01__Noticias{
+    border: 2px solid white;
+    border-radius: 0px 200px 200px 0px;
+    padding: 0rem 2rem;
+    transition: all .5s ease-in-out;
+}
+.section-index-01__Noticias a h2{
+    font-size: 5rem;
+    color: var(--three-color);
+    transition: all .5s ease-in-out;
+
+}
+.section-index-01__Noticias:hover{
+    border-radius: 200px 0px 0px 200px;
+    animation: mover-izq .5s ease-in-out;
+    animation-fill-mode: forwards;
+}
+.section-index-01__Noticias a h2:hover{
+    color: var(--main-color);
+}
+
+    BLOQUE_02_TENDENCIAS
+
+.section-index-02__Tendencias{
+    border: 2px solid white;
+    border-radius: 200px 0px 0px 200px;
+
+    padding: 0rem 2rem;
+    transition: all .5s ease-in-out;
+}
+.section-index-02__Tendencias a h2{
+    font-size: 5rem;
+    color: var(--three-color);
+    transition: all .5s ease-in-out;
+}
+.section-index-02__Tendencias:hover{
+    border-radius: 0px 200px 200px 0px;
+    animation: mover-der .5s ease-in-out;
+    animation-fill-mode: forwards;
+}
+.section-index-02__Tendencias a h2:hover{
+    color: var(--main-color);
+}
+
+    BLOQUE_03_MULTIMEDIA
+
+.section-index-03__Multimedia{
+    border: 2px solid white;
+    border-radius: 0px 200px 200px 0px;
+
+    padding: 0rem 2rem;
+    transition: all .5s ease-in-out;
+}
+.section-index-03__Multimedia a h2{
+    font-size: 5rem;
+    color: var(--three-color);
+    transition: all .5s ease-in-out;
+}
+.section-index-03__Multimedia:hover{
+    border-radius: 200px 0px 0px 200px;
+    animation: mover-izq .5s ease-in-out;
+    animation-fill-mode: forwards;
+}
+.section-index-03__Multimedia a h2:hover{
+    color: var(--main-color);
+}
+
+
+    BLOQUE_04_COMUNIDAD
+
+.section-index-04__Comunidad{
+    border: 2px solid white;
+    border-radius: 200px 0px 0px 200px;
+
+    padding: 0rem 2rem;
+    transition: all .5s ease-in-out;
+}
+.section-index-04__Comunidad a h2{
+    font-size: 5rem;
+    color: var(--three-color);
+    transition: all .5s ease-in-out;
+}
+.section-index-04__Comunidad:hover{
+    border-radius: 0px 200px 200px 0px;
+    animation: mover-der .5s ease-in-out;
+    animation-fill-mode: forwards;
+}
+.section-index-04__Comunidad a h2:hover{
+    color: var(--main-color);
+}
+
+*/
+
+
+/* ANIMATION BLOQUES TEXTO */
+
+    /* ANIMATION IZQ */
+
+    @keyframes mover-izq{
+        form{
+            transform: translateX(-100px);
+        }
+        to{
+            transform: translateX(50px);
+        }
+    }
+
+    /* ANIMATION DER */
+
+    @keyframes mover-der{
+        form{
+            transform: translateX(0px);
+        }
+        to{
+            transform: translateX(-50px);
+        }
+    }
+
+
+
+
+/* LINK PLAYLIST */
+
+.section-index-01__playlist{
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    margin-bottom: 1.5%;
+
+}
+
+.playlist{
+    display: flex;
+    align-items: center;
+    color: var(--main-color);
+    text-decoration: none;
+    
+    font-family: 'Kanit', sans-serif;
+
+    font-size: 1rem;
+    font-style: normal;
+    line-height: normal;
+
+    transition: all .5s ease-in-out;
+    position: relative;
+
+    padding: 0 10px;
+
+    /* animation: rotationArrow 3s infinite linear; */
+}
+
+/* BORDER BOTTOM LINE   */
+
+.playlist:after{
+    content: "";
+    position: absolute;
+    background-color: var(--main-color);
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -5px;
+    transition: all .5s ease-in-out;
+}
+
+.playlist:hover:after{
+    width: 100%;    
+}
+
+.playlist:hover{
+    /* letter-spacing: .1rem;  */
+}
+
+/* FLECHA GIRATORIA */
+
+.flecha{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    animation: rotation 1s ease-in-out infinite;
+    margin: 30px auto;
+
+    position: relative;
+    transition: all .5s ease-in-out;
+}
+
+.flecha:hover{
+    background-color: #F23005;
+    
+}
+
+@keyframes rotation{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+/* TENDENCIAS */
+
+.section-tendencias-01{
+    width: 100%;
+
+    display: flex;
+    flex-flow: column;
+    margin: auto;
+    justify-content:center;
+    align-items: center;
+    
+}
+
+.section-tendencias-01-1{
+    width: 70%;
+}
+
+.section-tendencias-01__block{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text__tendencias{
+    letter-spacing: .1rem; 
+}
+
+.artista{
+
+}
+
+.artista h2{
+    font-size: 5rem;
+    color: var(--main-color);
+}
+
+.texto-artista{
+    width: 60%;
+}
+
+.texto-artista p{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+    color: white;
+
+}
+
+    /* SLIDER TENDENCIAS */
+
+.section-tendencias-01__slider{
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1rem;
+
+
+}
+
+.section-tendencias-01__slider .section-tendencias-01__button{
+    display: flex;
+    gap: 1rem;
+    margin: 1rem;
+}
+
+.section-tendencias-01__slider .section-tendencias-01__img{
+    
+    width:100%;
+    position: relative;
+}
+
+.section-tendencias-01__img{
+    opacity: 1;
+    transition: .5s;
+}
+
+.section-tendencias-01__slider .section-tendencias-01__button button{
+    background-color: #0D0D0C;
+    border: none;
+   
+
+}
+
+    /* BLOQUE DEFINICION PAG TENDENCIAS */
+
+.text__tendencias{
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    text-align: center;
+}
+
+    /* BLOQUE_TENDENCIAS_ARTISTA_01 */
+
+.section-tendencias-artista-01{
+    display: flex;
+    flex-flow: column;
+    margin: auto;
+    justify-content: center;
+    padding-top: 5rem;
+
+    border: 2px solid white;
+    padding: 1rem;
+    margin: 3rem 0;
+}
+
+.section-tendencias-artista-01_text-img{
+    display: flex;
+    flex-flow: column;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.section-tendencias-artista-01_text-img h3{
+    border: 2px solid white;
+    width: 100%;
+    text-align: center;
+}
+
+
+.section-tendencias-artista-01_text-img{
+    align-items: center;
+}
+.artista-01_info{
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    margin: auto;
+    gap: 2rem;
+}
+
+.artista-01_img{
+    max-width:max-content;
+    margin: auto;
+    border: 1px solid red;
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.artista-01_img img{
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.text__tendencias__artita{
+    width: 100%;
+    color: white;
+    font-family: 'Kanit', sans-serif;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    font-style: normal;
+
+    padding-bottom: 1rem;
+
+}
+
+    /* STATS ARTISTAS */
+
+
+.section-tendencias-artista-01_stats{
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+    justify-content: center;
+
+}
+
+.stats{
+    min-height: max-content;
+    min-width: max-content;
+
+    border: 1px solid red;
+
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+    .stats.albumes{
+        
+    }
+
+    .stats.titulos_populares{
+
+    }
+
+    .stats.conciertos{
+
+    }
+
+    .stats.oyentes_mensuales{
+
+    }
+
+    /* BLOQUE_TENDENCIAS_ARTISTA_02 */
+
+ .section-tendencias-artista-02{
+    display: flex;
+    flex-flow: column;
+    margin: auto;
+    width: 100%;
+    padding-top: 5rem;
+}
+
+.section-tendencias-artista-02_text-img{
+    display: flex;
+    flex-flow: column;
+    flex-flow: row;
+    gap: 2rem;
+}
+
+.artista-02_info{
+    width: 50%;
+}
+
+.artista-02_img{
+    max-width: 40%;
+}
+
+.artista-02_img img{
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+    /* STATS ARTISTAS */
+
+
+.section-tendencias-artista-02_stats{
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    border-radius: 20px;
+    margin-top: 1rem;
+}
+
+.stats.conciertos{
+}
+
+
+hr{
+    border: 2px solid white;
+    margin-top: 10rem;
+}
+
+
+
+/* PLAYLIST */
+
+
+.section-tendencias-01{
+    width: 100%;
+
+    display: flex;
+    flex-flow: column;
+    margin: auto;
+    justify-content:center;
+    align-items: center;
+    
+}
+
+.section-tendencias-01-1{
+    width: 70%;
+}
+
+.section-tendencias-01__block{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text__tendencias{
+    letter-spacing: .1rem; 
+}
+
+.link-spotify-playlist{
+    display: flex;
+    align-items: center;
+    color: var(--main-color);
+    text-decoration: none;
+    font-family: 'Kanit', sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    line-height: normal;
+    transition: all .5s ease-in-out;
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.link-spotify-playlist:after{
+    content: "";
+    position: absolute;
+    background-color: var(--main-color);
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -5px;
+    transition: all .5s ease-in-out;
+}
+
+.link-spotify-playlist:hover:after{
+    width: 100%;    
+}
+
+.section-playlist-02{
+    width: 100%;
+
+    display: flex;
+    flex-flow: column;
+    margin: auto;
+    justify-content:center;
+    align-items: center;
+
+    margin-top: 3rem;
+}
+
+.section-playlist-02-tabla{
+    width: 100%;
+
+    display: flex;
+    flex-flow: column;
+    margin: auto;
+
+    padding: 1rem;
+    border: 2px solid white;
+
+    gap: 1rem;
+}
+
+.fila{
+    width: 100%;
+    display: grid;
+    /* grid-template-columns: repeat( auto-fit, minmax(480px, 1fr) ); */
+    grid-template-columns: .5fr 1fr 1fr 1fr .5fr .5fr;
+    transition: all .5s ease-in-out;
+    border: 2px solid white;
+
+    padding: 1rem;
+    gap: 1rem;
+
+
+}
+
+.fila:hover{
+    background-color:#F23005;
+}
+
+.fila.f00:hover{
+    background-color: #0D0D0C;
+}
+
+.fila p{
+    color: white;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    min-width: max-content;
+
+
+    font-size: 1rem;
+    
+}
+
+.fila.f00 p{ 
+    color: #F23005;
+}
+
+
+
+/* CUSTOM CURSOR */
+
+:root {
+    cursor: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.cursor {
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    transition: all 250ms ease-out;
+    position: fixed;
+    pointer-events: none;
+    left: 0;
+    top: 0;
+    transform: translate(calc(-50% + 15px), -50%);
+    backdrop-filter: invert(1) hue-rotate(45deg);
+    
+}
+  
+.cursor2 {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: var(--main-color);
+    position: fixed;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+   
+}
+
+.hover {
+    background-color: white;
+}
+
+
+/* HEADER */
+
+.header{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    justify-content: start;
+    align-items:start;
+}
+
+.header-content{
+    margin: auto;
+}
+
+.header-content-links{
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+}
+
+/* hr{
+    width: 100%;
+    height:1px;
+    border:none;
+    color:#000;
+    width: 90%;
+    background-color: var(--main-color);
+
+    margin-top: 2rem;
+} */
+
+.header-content a{
+    color: var(--main-color);
+    
+    font-family: 'Kanit', sans-serif;
+
+    font-size: 1rem;
+    font-style: normal;
+    line-height: normal;
+
+    margin: 1rem;
+
+    transition: all .5s ease-in-out;
+
+}
+
+    /* MENU RESPONSIVE */
+
+.abrir-menu{
+    display: none;
+    transition: all .5s ease-in-out;
+    /* animation: abrirmenu .5s ease-in-out; */
+
+}
+
+/* @keyframes abrirmenu {
+    form{
+        transform: translateX(0px);
+    }
+    to{
+        transform: translateX(-50px);
+    }
+} */
+
+.cerrar-menu{
+    display: none;
+
+}
+
+    /* LINKS HEADER */
+
+.links-header{
+    display: flex;
+    align-items: center;
+    color: var(--main-color);
+    text-decoration: none;
+    
+    font-family: 'Kanit', sans-serif;
+
+    font-size: 1rem;
+    font-style: normal;
+    line-height: normal;
+
+    transition: all .5s ease-in-out;
+    position: relative;
+
+    padding: 0 10px;
+
+    flex-grow: 1;
+}
+
+.links-header:after{
+    content: "";
+    position: absolute;
+    background-color: var(--main-color);
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -5px;
+    transition: all .5s ease-in-out;
+}
+
+.links-header:hover:after{
+    width: 100%;    
+}
+
+
+
+/* FOOTER */
+
+.footer{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.footer-content-welcome{
+    margin-top: 15%;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+}
+
+.footer-content-independent{
+    margin-top: -10px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+
+
+.footer-slider{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    max-width: max-content;
+    margin: auto;
+}
+
+.footer-slider p{
+    font-size: 20px;
+    color: white;
+    
+}
+
+.footer-slider-div{
+    padding: 0 20px;
+    max-width: 300px;
+    overflow: hidden;
+    height: 35px;
+    text-align: center;
+  }
+  
+.footer-slider-text {
+    animation: slidetext 6s ease-in-out 1s infinite;
+    animation-direction:alternate;
+    text-align: center;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.footer-slider-text p{
+    color: #F23005;
+    align-items: center;
+
+}
+  
+  @keyframes slidetext {
+    0%, 20%  {
+      margin-top: 0px;
+    }
+  
+    45%, 50% {
+      margin-top: -30px; /* Ajustado para el texto de 35px de alto */
+    }
+  
+    80%, 100% {
+      margin-top: -59px; /* Ajustado para mostrar completamente el tercer texto */
+    }
+  }
+
+.footer-laputaradio{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* --- MEDIA QUERY --- */
+
+
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+    .section-index-01__Home__Text p{
+        font-size: 2rem;
+    }
+
+    .text__tendencias{
+        font-size: 2rem;
+        letter-spacing: 0;
+    }
+
+    
+}
+
+@media (min-width: 480px) and (max-width: 1024px) {
+    
+    .section-index-01__Home__Text p{
+        font-size: 1.5rem;
+    }
+
+    .artista-01_info{
+        flex-flow: column;
+    }
+
+    h1{
+        font-size: 4rem;
+
+    }
+    .text__tendencias{
+        font-size: 2rem;
+        letter-spacing: 0;
+    }
+
+    .fila{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .fila p{
+        font-size: 1rem;
+    }
+    
+}
+
+@media screen and (max-width: 550px) {
+
+    /* MENU RESPONSIVE */
+    
+    .abrir-menu{
+        display: block;
+        background-color: var(--five-color);
+        border: 0;
+        background-color: transparent;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+
+
+    }
+
+    .cerrar-menu{
+        display: block;
+        background-color: var(--five-color);
+        border: 0;
+        font-size: 1rem;
+        background-color: transparent;
+        color: white;
+
+        position: absolute;
+        right: 20px;
+        top: 20px;
+
+        
+    }
+
+    .header-content{
+        width: 40%;
+        display: flex;
+        flex-flow: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: var(--five-color);
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+        opacity: 0;
+        visibility: hidden;
+        /* transition: all .5s ease-in-out; */
+
+    }
+
+    .header-content.visible{
+        width: 40%;
+        opacity: 1;
+        visibility: visible;
+    
+    }
+
+    .header-content-links{
+        flex-flow: column;
+        align-items: end;
+        margin-top: 2rem;
+    
+    }
+
+        /* ORDEN MENU RESPONSIVE */
+
+        .links-header.home{
+            order: 1;
+        }
+        
+        .links-header.links{
+            order: 2;
+        }
+
+    /* FIN MENU RESPONSIVE */
+    
+    .header-content-links a{
+        color: #F23005;
+    }
+
+    .section-index-01__Home__Text p{
+        font-size: 1rem;
+    }
+
+    .section-index-01__Home img{
+        width: 50%;
+        display: flex;
+        flex-flow: block;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .section-index-01-1{
+        height: 100vh;
+    }
+
+    .footer{
+
+    }
+
+    .section-index-01{
+        height: 100vh;
+    }
+
+    .section-index-01__Home__Text p{
+        font-size: 1.5rem;
+    }
+
+    .cursor{
+        display: none;
+    }
+
+    .cursor2{
+        display: none;
+    }
+
+    .artista-01_info{
+        flex-flow: column;
+    }
+
+    h1{
+        font-size: 3.5rem;
+        margin-top: 5rem;
+
+    }
+
+    .text__tendencias{
+        font-size: 1.5rem;
+        letter-spacing: 0;
+    }
+
+    hr{
+        margin-top: 6rem;
+    }
+
+    .links-header-logo{
+        display: none;
+    }
+
+    .fila p{
+        font-size: 1rem;
+    }
+
+    .stats{
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        width: 250px;
+        height: 250px;
+    }
+
+}
+
+
