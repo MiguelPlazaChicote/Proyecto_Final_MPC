@@ -99,10 +99,6 @@ h2{
 
 }
 
-h2:hover{
-    
-}
-
 h3{
     color: var(--main-color);
     
@@ -149,13 +145,12 @@ body{
     
 }
 
-main{
-    
-}
 
-/* SECTION-INDEX-01 */
+/* --------------------------------------------------------------------------------------------------------------------------- */
 
-.section-index-01{
+/* INDEX */
+
+.section-index{
     width: 100%;
     height: 100vh;
 
@@ -167,13 +162,13 @@ main{
     align-items: center;
     
 }
-.section-index-01-1{
+.section-index__contenido{
     display: flex;
     flex-flow: column;
     
 }
 
-.section-index-01__block{
+.section-index__contenido__block{
     max-width: 70%;
     margin: auto;
     display: flex;
@@ -184,226 +179,219 @@ main{
 
 }
 
-.section-index-01__Home{
+.section-index__contenido__block--img{
     min-width: 30%;
 }
 
-.section-index-01__Home__Text{
+.section-index__contenido__block--text{
     display: flex;
     text-align: center;
-    margin-top: 5%;
+
 }
 
-.section-index-01__Home__Text p{
-    font-family: 'Times New Roman', Times, serif;
+    /* BLOQUE DEFINICION PARA TODAS PAG */
+
+    .text__big{
+        font-family: 'Times New Roman', Times, serif;
+        color: white;
+        text-align: center;
+    }
+
+/* --------------------------------------------------------------------------------------------------------------------------- */
+
+/* NOTICIAS */
+
+.section-noticias{
+    width: 100%;
+
+    display: flex;
+    flex-flow: column;
+    margin: auto;
+    justify-content:center;
+    align-items: center;
+}
+.section-noticias-01{
+    width: 100%;
+
+    display: flex;
+    flex-flow: column;
+    margin: auto;
+    justify-content:center;
+    align-items: center;
+}
+
+
+.section-noticias__contenido{
+    max-width: 70%;
+}
+.section-noticias-01-1{
+    max-width: 70%;
+}
+
+
+.noticias-block-01{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+
+    margin-top: 5rem;
+
+    border: 2px solid white;
+    padding: 1rem;
+    transition: all .2s ease-in-out;
+
+}
+
+.noticias-block-01:hover{
+    transform:scale(1.03);
+    background-color: rgba(255, 255, 255, 0.103);
+    
+}
+
+.noticias-block-01-img{
+    height: 300px;
+	overflow: hidden;
+    
+}
+
+.noticias-block-01 a h4{
+    padding: 1rem 0rem;
+    
+}
+
+.noticias-block-02 a h4{
+    padding: 1rem 0rem;
+    
+}
+
+.add-playlist{
+    width: min-content;
+    margin: auto;
+    background-color: #F23005;
+    padding: 1rem 3rem;
+    
+    margin-top: 1rem;
+    transition: all .3s ease-in-out;
+
+}
+
+.add-playlist:hover{
+    background-color: #731F17;
+
+}
+
+.add-playlist-text{
+    width: 100%;
+    margin: auto;
     color: white;
-}
-
-
-
-/* BLOQUE NOTICIAS, TENDENCIAS, MULTIMEDIA Y COMUNIDAD 1.1
-
-    BLOQUE_01_NOTICIAS
-
-.section-index-01__Noticias{
-    border: 2px solid white;
-    border-radius: 0px 200px 200px 0px;
-    padding: 0rem 2rem;
-    transition: all .5s ease-in-out;
-}
-.section-index-01__Noticias a h2{
-    font-size: 5rem;
-    color: var(--three-color);
-    transition: all .5s ease-in-out;
-
-}
-.section-index-01__Noticias:hover{
-    border-radius: 200px 0px 0px 200px;
-    animation: mover-izq .5s ease-in-out;
-    animation-fill-mode: forwards;
-}
-.section-index-01__Noticias a h2:hover{
-    color: var(--main-color);
-}
-
-    BLOQUE_02_TENDENCIAS
-
-.section-index-02__Tendencias{
-    border: 2px solid white;
-    border-radius: 200px 0px 0px 200px;
-
-    padding: 0rem 2rem;
-    transition: all .5s ease-in-out;
-}
-.section-index-02__Tendencias a h2{
-    font-size: 5rem;
-    color: var(--three-color);
-    transition: all .5s ease-in-out;
-}
-.section-index-02__Tendencias:hover{
-    border-radius: 0px 200px 200px 0px;
-    animation: mover-der .5s ease-in-out;
-    animation-fill-mode: forwards;
-}
-.section-index-02__Tendencias a h2:hover{
-    color: var(--main-color);
-}
-
-    BLOQUE_03_MULTIMEDIA
-
-.section-index-03__Multimedia{
-    border: 2px solid white;
-    border-radius: 0px 200px 200px 0px;
-
-    padding: 0rem 2rem;
-    transition: all .5s ease-in-out;
-}
-.section-index-03__Multimedia a h2{
-    font-size: 5rem;
-    color: var(--three-color);
-    transition: all .5s ease-in-out;
-}
-.section-index-03__Multimedia:hover{
-    border-radius: 200px 0px 0px 200px;
-    animation: mover-izq .5s ease-in-out;
-    animation-fill-mode: forwards;
-}
-.section-index-03__Multimedia a h2:hover{
-    color: var(--main-color);
-}
-
-
-    BLOQUE_04_COMUNIDAD
-
-.section-index-04__Comunidad{
-    border: 2px solid white;
-    border-radius: 200px 0px 0px 200px;
-
-    padding: 0rem 2rem;
-    transition: all .5s ease-in-out;
-}
-.section-index-04__Comunidad a h2{
-    font-size: 5rem;
-    color: var(--three-color);
-    transition: all .5s ease-in-out;
-}
-.section-index-04__Comunidad:hover{
-    border-radius: 0px 200px 200px 0px;
-    animation: mover-der .5s ease-in-out;
-    animation-fill-mode: forwards;
-}
-.section-index-04__Comunidad a h2:hover{
-    color: var(--main-color);
-}
-
-*/
-
-
-/* ANIMATION BLOQUES TEXTO */
-
-    /* ANIMATION IZQ */
-
-    @keyframes mover-izq{
-        form{
-            transform: translateX(-100px);
-        }
-        to{
-            transform: translateX(50px);
-        }
-    }
-
-    /* ANIMATION DER */
-
-    @keyframes mover-der{
-        form{
-            transform: translateX(0px);
-        }
-        to{
-            transform: translateX(-50px);
-        }
-    }
-
-
-
-
-/* LINK PLAYLIST */
-
-.section-index-01__playlist{
+    font-family: 'Kanit', sans-serif;
     display: flex;
     justify-content: center;
-    margin-top: 3%;
-    margin-bottom: 1.5%;
+    font-size: 1.2rem;
+    font-style: normal;
+}
+
+.noticias-block-02{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin-top: 1rem;
+
+    gap: 1rem;
 
 }
 
-.playlist{
+.noticias-block-02-01{
+    border: 2px solid white;
+    padding: 1rem;
+    transition: all .2s ease-in-out;
+
+}
+
+.noticias-block-02-01:hover{
+    transform:scale(1.03);
+    background-color: rgba(255, 255, 255, 0.103);
+    
+}
+
+.noticias-block-02-02{
+    border: 2px solid white;
+    padding: 1rem;
+    transition: all .2s ease-in-out;
+
+}
+
+.noticias-block-02-02:hover{
+    transform:scale(1.03);
+    background-color: rgba(255, 255, 255, 0.103);
+    
+}
+
+/* DENTRO DE CADA NOTICIAS */
+
+.block-noticia{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+}
+
+.img-block-noticia{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+    gap: 1rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.text__noticias{
+    width: 100%;
+    color: white;
+    font-family: 'Kanit', sans-serif;
     display: flex;
     align-items: center;
-    color: var(--main-color);
-    text-decoration: none;
-    
-    font-family: 'Kanit', sans-serif;
-
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-style: normal;
-    line-height: normal;
 
-    transition: all .5s ease-in-out;
-    position: relative;
+    padding-bottom: 1rem;
 
-    padding: 0 10px;
-
-    /* animation: rotationArrow 3s infinite linear; */
 }
 
-/* BORDER BOTTOM LINE   */
-
-.playlist:after{
-    content: "";
-    position: absolute;
-    background-color: var(--main-color);
-    height: 2px;
-    width: 0;
-    left: 0;
-    bottom: -5px;
-    transition: all .5s ease-in-out;
+.titular{
+    padding: 2rem 0rem;
 }
 
-.playlist:hover:after{
-    width: 100%;    
-}
-
-.playlist:hover{
-    /* letter-spacing: .1rem;  */
-}
-
-/* FLECHA GIRATORIA */
-
-.flecha{
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    animation: rotation 1s ease-in-out infinite;
-    margin: 30px auto;
-
-    position: relative;
-    transition: all .5s ease-in-out;
-}
-
-.flecha:hover{
-    background-color: #F23005;
+.masnoticias{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     
+    gap: 1rem;
+    padding: 1rem;
+
+    margin-top: 1rem;
+    border: 2px solid white;
+
+    text-align: center;
+
 }
 
-@keyframes rotation{
-    0%{
-        transform: rotate(0deg);
-    }
+.masnoticias-text{
+    width: 100%;
+    color: white;
+    font-family: 'Kanit', sans-serif;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    font-style: normal;
 
-    100%{
-        transform: rotate(360deg);
-    }
+    padding-bottom: 1rem;
+    justify-content: center;
 }
+
+/* --------------------------------------------------------------------------------------------------------------------------- */
 
 /* TENDENCIAS */
 
@@ -431,10 +419,6 @@ main{
 
 .text__tendencias{
     letter-spacing: .1rem; 
-}
-
-.artista{
-
 }
 
 .artista h2{
@@ -493,13 +477,6 @@ main{
 
 }
 
-    /* BLOQUE DEFINICION PAG TENDENCIAS */
-
-.text__tendencias{
-    font-family: 'Times New Roman', Times, serif;
-    color: white;
-    text-align: center;
-}
 
     /* BLOQUE_TENDENCIAS_ARTISTA_01 */
 
@@ -552,6 +529,15 @@ main{
 
 }
 
+.artista-link{
+    display: flex;
+    align-items: center;
+}
+
+.artista-link-ancho{
+    width: 35px;
+}
+
 .artista-01_img img{
     width: 100%;
     background-repeat: no-repeat;
@@ -598,22 +584,6 @@ main{
     background-position: center;
 }
 
-    .stats.albumes{
-        
-    }
-
-    .stats.titulos_populares{
-
-    }
-
-    .stats.conciertos{
-
-    }
-
-    .stats.oyentes_mensuales{
-
-    }
-
     /* BLOQUE_TENDENCIAS_ARTISTA_02 */
 
  .section-tendencias-artista-02{
@@ -659,21 +629,16 @@ main{
     margin-top: 1rem;
 }
 
-.stats.conciertos{
-}
-
-
 hr{
     border: 2px solid white;
     margin-top: 10rem;
 }
 
+/* --------------------------------------------------------------------------------------------------------------------------- */
 
+/* CONCIERTOS */
 
-/* PLAYLIST */
-
-
-.section-tendencias-01{
+.section-conciertos-01{
     width: 100%;
 
     display: flex;
@@ -684,121 +649,16 @@ hr{
     
 }
 
-.section-tendencias-01-1{
+.section-conciertos-01-1{
     width: 70%;
 }
 
-.section-tendencias-01__block{
+.section-conciertos-01__block{
     display: flex;
     flex-flow: column;
     justify-content: center;
     align-items: center;
 }
-
-.text__tendencias{
-    letter-spacing: .1rem; 
-}
-
-.link-spotify-playlist{
-    display: flex;
-    align-items: center;
-    color: var(--main-color);
-    text-decoration: none;
-    font-family: 'Kanit', sans-serif;
-    font-size: 1rem;
-    font-style: normal;
-    line-height: normal;
-    transition: all .5s ease-in-out;
-    position: relative;
-    margin-bottom: 3rem;
-}
-
-.link-spotify-playlist:after{
-    content: "";
-    position: absolute;
-    background-color: var(--main-color);
-    height: 2px;
-    width: 0;
-    left: 0;
-    bottom: -5px;
-    transition: all .5s ease-in-out;
-}
-
-.link-spotify-playlist:hover:after{
-    width: 100%;    
-}
-
-.section-playlist-02{
-    width: 100%;
-
-    display: flex;
-    flex-flow: column;
-    margin: auto;
-    justify-content:center;
-    align-items: center;
-
-    margin-top: 3rem;
-}
-
-.section-playlist-02-tabla{
-    width: 100%;
-
-    display: flex;
-    flex-flow: column;
-    margin: auto;
-
-    padding: 1rem;
-    border: 2px solid white;
-
-    gap: 1rem;
-}
-
-.fila{
-    width: 100%;
-    display: grid;
-    /* grid-template-columns: repeat( auto-fit, minmax(480px, 1fr) ); */
-    grid-template-columns: .5fr 1fr 1fr 1fr .5fr .5fr;
-    transition: all .5s ease-in-out;
-    border: 2px solid white;
-
-    padding: 1rem;
-    gap: 1rem;
-
-    
-
-
-}
-
-.fila:hover{
-    background-color:#F23005;
-    transform:scale(1.01);
-
-}
-
-.fila.f00:hover{
-    background-color: #0D0D0C;
-    transform: none;
-
-}
-
-.fila p{
-    color: white;
-    font-size: 1.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    min-width: max-content;
-
-
-    font-size: 1rem;
-    
-}
-
-.fila.f00 p{ 
-    color: #F23005;
-}
-
-/* CONCIERTOS */
 
 .section-conciertos-02{
     width: 100%;
@@ -846,7 +706,6 @@ hr{
     padding: 1rem;
     transition: all .2s ease-in-out;
 
-    position: relative;
 }
 
 .concierto::after{
@@ -856,24 +715,6 @@ hr{
     text-align: center;
 }
 
-.concierto:active{
-    /* background-color: #0d0d0cd0;
-    text-align: center;
-    transition: all .5s ease-in-out; */
-
-}
-
-.concierto:active img{
-    filter: blur(5px);
-    transition: all .2s ease-in-out;
-
-
-}
-
-.concierto:active img::after{
-    
-}
-
 .concierto:hover{
     transform:scale(1.05);
     width: fit-content;
@@ -881,6 +722,226 @@ hr{
     background-color: rgba(255, 255, 255, 0.103);
     
 }
+
+/* --------------------------------------------------------------------------------------------------------------------------- */
+
+/* PLAYLIST */
+
+
+.section-tendencias-01{
+    width: 100%;
+
+    display: flex;
+    flex-flow: column;
+    margin: auto;
+    justify-content:center;
+    align-items: center;
+    
+}
+
+.section-tendencias-01-1{
+    width: 70%;
+}
+
+.section-tendencias-01__block{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.segbloque__link-spotify-playlist{
+    display: flex;
+    align-items: center;
+    color: var(--main-color);
+    text-decoration: none;
+    font-family: 'Kanit', sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    line-height: normal;
+    transition: all .5s ease-in-out;
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.segbloque__link-spotify-playlist:after{
+    content: "";
+    position: absolute;
+    background-color: var(--main-color);
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -5px;
+    transition: all .5s ease-in-out;
+}
+
+.segbloque__link-spotify-playlist:hover:after{
+    width: 100%;    
+}
+
+.section-playlist__contenido__segbloque{
+    width: 100%;
+
+    display: flex;
+    flex-flow: column;
+    margin: auto;
+    justify-content:center;
+    align-items: center;
+
+    margin-top: 3rem;
+}
+
+.segbloque__content__fila{
+    width: 100%;
+
+    display: flex;
+    flex-flow: column;
+    margin: auto;
+
+    padding: 1rem;
+    border: 2px solid white;
+
+    gap: 1rem;
+}
+
+.fila{
+    width: 100%;
+    display: grid;
+    /* grid-template-columns: repeat( auto-fit, minmax(480px, 1fr) ); */
+    grid-template-columns: .5fr 1fr 1fr 1fr .5fr .5fr;
+    transition: all .5s ease-in-out;
+    border: 2px solid white;
+
+    padding: 1rem;
+    gap: 1rem;
+
+    transition: all .2s ease-in-out;
+
+}
+
+
+.fila:hover{
+    transform:scale(1.01);
+    background-color: rgba(255, 255, 255, 0.103);
+}
+
+.fila p{
+    color: white;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    min-width: max-content;
+
+
+    font-size: 1rem;
+    
+}
+
+.fila.f00 p{ 
+    color: #F23005;
+}
+
+/* LINK PLAYLIST */
+
+.section-playlist{
+    width: 100%;
+
+    display: flex;
+    flex-flow: column;
+    margin: auto;
+    justify-content:center;
+    align-items: center;
+    
+}
+
+.section-playlist__contenido{
+    width: 70%;
+}
+
+.section-playlist__contenido__primerbloque{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-index-01__playlist{
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    margin-bottom: 1.5%;
+
+}
+
+.playlist{
+    display: flex;
+    align-items: center;
+    color: var(--main-color);
+    text-decoration: none;
+    
+    font-family: 'Kanit', sans-serif;
+
+    font-size: 1rem;
+    font-style: normal;
+    line-height: normal;
+
+    transition: all .5s ease-in-out;
+    position: relative;
+
+    padding: 0 10px;
+
+}
+
+/* BORDER BOTTOM LINE   */
+
+.playlist:after{
+    content: "";
+    position: absolute;
+    background-color: var(--main-color);
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -5px;
+    transition: all .5s ease-in-out;
+}
+
+.playlist:hover:after{
+    width: 100%;    
+}
+
+/* FLECHA GIRATORIA */
+
+.flecha{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    animation: rotation 1s ease-in-out infinite;
+    margin: 30px auto;
+
+    position: relative;
+    transition: all .5s ease-in-out;
+}
+
+.flecha:hover{
+    background-color: #F23005;
+    
+}
+
+@keyframes rotation{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+
 
 /* CUSTOM CURSOR */
 
@@ -895,9 +956,11 @@ hr{
 .cursor {
     width: 25px;
     height: 25px;
+
     border-radius: 100%;
     transition: all 250ms ease-out;
     position: fixed;
+
     pointer-events: none;
     left: 0;
     top: 0;
@@ -909,8 +972,10 @@ hr{
 .cursor2 {
     width: 10px;
     height: 10px;
+
     border-radius: 100%;
     background-color: var(--main-color);
+
     position: fixed;
     transform: translate(-50%, -50%);
     pointer-events: none;
@@ -943,6 +1008,10 @@ hr{
     width: 100%;
     display: flex;
     flex-flow: row;
+}
+
+.logo_UnusualRadio_peq{
+    max-width: 60px;
 }
 
 /* hr{
@@ -978,16 +1047,16 @@ hr{
     transition: all .5s ease-in-out;
     /* animation: abrirmenu .5s ease-in-out; */
 
+
 }
 
-/* @keyframes abrirmenu {
-    form{
-        transform: translateX(0px);
-    }
-    to{
-        transform: translateX(-50px);
-    }
-} */
+.img-abrir-menu{
+    background-color: #F23005;
+}
+
+.img-cerrar-menu{
+    background-color: #F23005;
+}
 
 .cerrar-menu{
     display: none;
@@ -1150,11 +1219,11 @@ hr{
 
 
 @media (min-width: 1024px) and (max-width: 1280px) {
-    .section-index-01__Home__Text p{
+    .text__big{
         font-size: 2rem;
     }
 
-    .text__tendencias{
+    .text__big{
         font-size: 2rem;
         letter-spacing: 0;
     }
@@ -1170,7 +1239,21 @@ hr{
 
 @media (min-width: 480px) and (max-width: 1024px) {
     
-    .section-index-01__Home__Text p{
+    /* GENERALES */
+
+    h1{
+        font-size: 4rem;
+    }
+
+    h4{
+        font-size: 1.5rem;
+    }
+
+    h5{
+        font-size: .8rem;
+    }
+
+    .text__big{
         font-size: 1.5rem;
     }
 
@@ -1178,10 +1261,6 @@ hr{
         flex-flow: column;
     }
 
-    h1{
-        font-size: 4rem;
-
-    }
     .text__tendencias{
         font-size: 2rem;
         letter-spacing: 0;
@@ -1199,14 +1278,6 @@ hr{
         font-size: 1rem;
     }
     
-    h4{
-        font-size: 1.5rem;
-    }
-
-    h5{
-        font-size: .8rem;
-    }
-
     .conciertos-fila{
         grid-template-columns: 1fr 1fr 1fr;
     }
@@ -1221,7 +1292,35 @@ hr{
 
 @media screen and (max-width: 550px) {
 
+    /* GENERALES */
+
+    h1{
+        font-size: 3.5rem;
+        margin-top: 5rem;
+    }
+
+    h4{
+        font-size: 1.5rem;
+    }
+
+    h5{
+        font-size: .8rem;
+    }
+
+    hr{
+        margin-top: 6rem;
+    }
+
+    .text__big{
+        font-size: 1.5rem;
+        letter-spacing: 0;
+    }
+
     /* MENU RESPONSIVE */
+
+    body.menu-abierto {
+        overflow: hidden;
+    }
     
     .abrir-menu{
         display: block;
@@ -1232,7 +1331,7 @@ hr{
         right: 20px;
         top: 20px;
 
-
+        
     }
 
     .cerrar-menu{
@@ -1255,32 +1354,38 @@ hr{
         display: flex;
         flex-flow: column;
         align-items: end;
+
         gap: 1rem;
+        padding: 2rem;
+
         position: absolute;
         top: 0;
         right: 0;
         bottom: 0;
+
         background-color: var(--five-color);
-        padding: 2rem;
         box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
         opacity: 0;
         visibility: hidden;
-        /* transition: all .5s ease-in-out; */
+        transition: all .5s ease-in-out;
 
+    
     }
 
     .header-content.visible{
-        width: 40%;
+        width: 45%;
+        height: 100vh;
         opacity: 1;
         visibility: visible;
-    
+        overflow: hidden;
+
     }
 
     .header-content-links{
         flex-flow: column;
         align-items: end;
         margin-top: 2rem;
-    
+
     }
 
         /* ORDEN MENU RESPONSIVE */
@@ -1295,15 +1400,13 @@ hr{
 
     /* FIN MENU RESPONSIVE */
     
-    .header-content-links a{
-        color: #F23005;
+    /* INDEX RESPONSIVE */
+
+    .section-index__contenido__block--text p{
+        font-size: 1.5rem;
     }
 
-    .section-index-01__Home__Text p{
-        font-size: 1rem;
-    }
-
-    .section-index-01__Home img{
+    .section-index__contenido__block--img img{
         width: 50%;
         display: flex;
         flex-flow: block;
@@ -1311,63 +1414,40 @@ hr{
         margin: auto;
     }
 
-    .section-index-01-1{
+    .section-index__contenido{
         height: 100vh;
     }
 
-    .footer{
-
-    }
-
-    .section-index-01{
+    .section-index{
         height: 100vh;
     }
 
-    .section-index-01__Home__Text p{
-        font-size: 1.5rem;
+    .section-index__contenido__block{
+        max-width: 90%;
     }
 
-    .cursor{
-        display: none;
+    /* NOTICIAS RESPONSIVE */
+
+    .section-noticias-01-1{
+        max-width: 90%;
     }
 
-    .cursor2{
-        display: none;
+    .section-noticias__contenido{
+        width: 90%;
+    }
+
+    .block-noticia{
+        margin-top: 4rem;
+    }
+
+    /* TENDENCIAS RESPONSIVE */
+
+    .section-tendencias-01-1{
+        width: 90%;
     }
 
     .artista-01_info{
         flex-flow: column;
-    }
-
-    h1{
-        font-size: 3.5rem;
-        margin-top: 5rem;
-
-    }
-
-    .text__tendencias{
-        font-size: 1.5rem;
-        letter-spacing: 0;
-    }
-
-    hr{
-        margin-top: 6rem;
-    }
-
-    .links-header-logo{
-        display: none;
-    }
-
-    .fila{
-        display: flex;
-        flex-flow: column;
-        
-        align-items: center;
-        justify-content: center;
-    }
-
-    .fila p{
-        font-size: 1rem;
     }
 
     .stats{
@@ -1377,17 +1457,55 @@ hr{
         width: 250px;
         height: 250px;
     }
-
-    h4{
-        font-size: 1.5rem;
+    
+    /* CONCIERTOS RESPONSIVE */
+    
+    .section-conciertos-01-1{
+        width: 90%;
     }
-
-    h5{
-        font-size: .8rem;
-    } 
 
     .conciertos-fila{
         grid-template-columns: 1fr;
+    }
+
+    
+    .links-header-logo{
+        display: none;
+    }
+
+    /* PLAYLIST RESPONSIVE */
+
+    .section-playlist__contenido{
+        width: 90%;
+    }
+
+    .segbloque__link-spotify-playlist{
+        position: static;
+    }
+
+    .fila{
+        display: flex;
+        flex-flow: column;
+        
+        align-items: center;
+        justify-content: center;
+    }
+    .fila:hover{
+        transform: none;
+        background-color: var(--five-color);
+    }
+
+    .fila p{
+        font-size: 1rem;
+    }
+
+    /* SIN MOUSE RESPONSIVE */
+    .cursor{
+        display: none;
+    }
+
+    .cursor2{
+        display: none;
     }
 }
 
